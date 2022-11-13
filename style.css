@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5%;
+    align-items: center;
+}
+
+.navigation .nav ul{
+    display: flex;
+    list-style: none;
+    visibility: visible;
+}
+
+.navigation .nav ul li{
+    margin-right: 20px;
+}
+
+.navigation .nav ul li a{
+    color: #444;
+    text-decoration: none;
+}
+
+.navigation .nav ul li a:hover{
+    color: #f9867f;
+}
+
+.burgerMenu{
+    display: none;
+}
+
+.bars{
+    background-color: black;
+    width: 35px;
+    height: 4px;
+    margin-bottom: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.secondContent{
+    padding: 0 5%;
+}
+
+.content .main-content{
+    width: 68%;
+}
+
+.content .main-content img{
+    width: 100%;
+    height: 230px;
+}
+
+.content .aside{
+    background-color: #00001a;
+    width: 30%;
+    height: 100%;
+}
+
+.content .main-content .main-content-text{
+    display: flex;
+    width: 100%;
+}
+
+.content .main-content .main-content-text .title{
+    width:40%;
+}
+
+.content .main-content .main-content-text .title h3 {
+    font-size: 50px;
+}
+
+.content .main-content .main-content-text .text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.content .main-content .main-content-text .text p{ 
+    font-size: 20px;
+}
+
+button{
+    width: 200px;
+    background-color: #f9867f;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #00001a;
+    cursor: pointer;
+}
+
+.content .aside{
+    padding: 15px;
+}
+
+.content .aside h2{
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.content .aside ul{
+    list-style: none;
+}
+
+.content .aside ul li{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    min-height: 100px;
+}
+
+.content .aside ul li:nth-child(3){
+    border: none;
+}
+
+.content .aside ul li p{
+    color: #777;
+}
+
+.content .aside ul li h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.secondContent{
+    margin-top: 100px;
+    display: flex;
+}
+
+.secondContent .card{
+    display: flex;
+    align-items: center;
+}
+
+.secondContent .card img{
+    margin: 15px;
+    height: 150px;
+}
+
+.secondContent .card h1{
+    margin: 10px 0;
+    color: #777;
+}
+
+.secondContent .card h5{
+    cursor: pointer;
+}
+
+.secondContent .card h5:hover{
+    color: #f9867f;
+}
+
+.secondContent h5{
+    margin-bottom: 10px;
+}
+
+.secondContent p{
+    color: #777;
+}
+
+
+@media (max-width:480px) {
+    .content{
+        flex-wrap: wrap;
+    }
+
+    .content .main-content{
+        width: 100%;
+    }
+
+    .content .main-content .main-content-text{
+        flex-wrap: wrap;
+    }
+
+    .content .main-content .main-content-text .title{
+        width:100%;
+    }
+    
+    .content .main-content .main-content-text .text{
+        width: 100%;
+    }
+
+    .content .aside{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .secondContent{
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .secondContent .card{
+        padding: none;
+    }
+
+    .burgerMenu{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+    
+
+}
